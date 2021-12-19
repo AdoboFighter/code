@@ -19,7 +19,6 @@
     <!-- 4 grid layout skills on homepage -->
     <!-- Every div is a grid item -->
     <div class="container-grid-4">
-        {{ print_r(URL('')) }}
         <div>
             <img src="{{ URL('storage/icon-box.jpg') }}" alt="">
             <h2>

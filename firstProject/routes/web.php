@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\PostsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,4 +16,8 @@ use App\Http\Controllers\PagesController;
 
 Route::get('/', [PagesController::class, 'index'])->name('products');
 Route::get('/about', [PagesController::class, 'about']);
+
+//Posts endpoint
+Route::get('/posts', [PostsController::class, 'index']);
+
 
